@@ -93,7 +93,7 @@ that matters.
 │  React client   │  HTTPS  │  Express API     │         │  PostgreSQL  │
 │  Redux Toolkit  │ ──────► │  Prisma ORM      │ ──────► │              │
 │  PrimeReact     │         │  JWT auth        │         └──────────────┘
-│  (Vercel)       │         │  (Railway)       │
+│                 │         │                  │
 └─────────────────┘         └────────┬─────────┘
                                      │
                          ┌───────────┼────────────┐
