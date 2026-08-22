@@ -70,9 +70,6 @@ that matters.
 
 ![Work orders](assets/activities.png)
 
-Rows are colour-coded by budget health, so an order burning through its
-quotation is visible before it becomes a problem rather than after.
-
 ---
 
 ## Feature set
