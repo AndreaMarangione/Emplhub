@@ -48,26 +48,7 @@ actually reported; future days show what is planned. Leave is rendered
 inline, so a team lead can see at a glance who is available next week and
 who is not.
 
-![Capacity planning board](docs/screenshots/planning.png)
-
-Some details that make it work in practice:
-
-- **Solid bars are actuals, dashed bars are plans.** The switch happens at
-  today's date, computed server-side so it does not drift with the client's
-  clock.
-- **Adjacent days on the same work order merge into a single bar.** A
-  five-day assignment reads as one block, not five separate cells.
-- **Colours are deterministic.** An FNV-1a hash of the normalised work order
-  name maps onto 24 evenly spaced OKLCH hues, so the same job is always the
-  same colour for everyone, with no palette to maintain and consistent
-  perceptual lightness across the whole range. Leave gets a reserved amber
-  hue so it never collides with a job.
-- **Labels adapt to available width.** A `ResizeObserver` on the grid
-  switches between the full work order name, a three-character abbreviation
-  and a bare marker, so the board stays readable from a 4K monitor down to a
-  phone.
-- **Rows are grouped by role**, in a defined business order rather than
-  alphabetically — managers first, then designers, controls, electricians.
+![Capacity planning board](assets/planning.png)
 
 ---
 
@@ -77,15 +58,7 @@ The landing page puts the engineer's active work orders one click away and
 shows their month at a glance: ordinary hours, overtime and travel time,
 navigable month by month.
 
-![Dashboard](docs/screenshots/dashboard.png)
-
-The hour classification is less trivial than it looks. Reports are
-aggregated **per calendar day before the eight-hour cap is applied** — three
-separate work orders on the same Tuesday produce eight ordinary hours plus
-four of overtime, not twelve ordinary hours. Weekends and public holidays
-push the entire day into overtime, and the holiday calendar is resolved
-**per site**: the national Italian calendar plus the local patron saint,
-which differs between Florence, Pistoia and Follonica.
+![Dashboard](assets/dashboard.png)
 
 ---
 
@@ -95,7 +68,7 @@ Every job the group is contracted for, with quoted value, hours consumed and
 budget remaining — filterable, sortable and searchable across every column
 that matters.
 
-![Work orders](docs/screenshots/activities.png)
+![Work orders](assets/activities.png)
 
 Rows are colour-coded by budget health, so an order burning through its
 quotation is visible before it becomes a problem rather than after.
