@@ -88,21 +88,15 @@ that matters.
 
 ## Architecture
 
-```
-┌─────────────────┐         ┌──────────────────┐         ┌──────────────┐
-│  React client   │  HTTPS  │  Express API     │         │  PostgreSQL  │
-│  Redux Toolkit  │ ──────► │  Prisma ORM      │ ──────► │              │
-│  PrimeReact     │         │  JWT auth        │         └──────────────┘
-│                 │         │                  │
-└─────────────────┘         └────────┬─────────┘
-                                     │
-                         ┌───────────┼────────────┐
-                         ▼           ▼            ▼
-                   ┌──────────┐ ┌─────────┐ ┌──────────┐
-                   │  AWS S3  │ │  SMTP   │ │   Cron   │
-                   │ reports  │ │  MJML   │ │ schedule │
-                   └──────────┘ └─────────┘ └──────────┘
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/architecture-dark.png">
+  <img alt="Emplhub architecture" src="assets/architecture-light.png">
+</picture>
+
+A conventional three-tier layout, with the interesting parts concentrated in
+the API: the date engine that anchors every calendar computation to
+`Europe/Rome`, the report generator that produces styled Excel workbooks, and
+the scheduler that drives monthly delivery without anyone pressing a button.
 
 **Server** — Node.js, TypeScript, Express, Prisma, PostgreSQL, ExcelJS,
 MJML, Nodemailer, date-fns, node-schedule.
