@@ -38,10 +38,6 @@ team leads and administrators all work from — covering the full loop from an
 engineer logging four hours on a Tuesday to a costed monthly report landing
 in a director's inbox.
 
-**In production across four operating companies and three sites**, serving
-electrical engineers, instrumentation technicians, software engineers,
-controls specialists and site managers.
-
 ---
 
 ## Capacity planning
