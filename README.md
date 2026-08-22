@@ -93,27 +93,13 @@ that matters.
   <img alt="Emplhub architecture" src="assets/architecture-light.png">
 </picture>
 
-A conventional three-tier layout, with the interesting parts concentrated in
-the API: the date engine that anchors every calendar computation to
-`Europe/Rome`, the report generator that produces styled Excel workbooks, and
-the scheduler that drives monthly delivery without anyone pressing a button.
-
-**Server** — Node.js, TypeScript, Express, Prisma, PostgreSQL, ExcelJS,
-MJML, Nodemailer, date-fns, node-schedule.
-
-**Client** — React, TypeScript, Redux Toolkit, PrimeReact,
-react-hook-form.
-
-**Infrastructure** — AWS S3 for generated artefacts, scheduled jobs for
-monthly reporting.
-
 ---
 
 ## Status
 
 In active production use and under continuous development.
 
-**Author** — [@Andrea Marangione]([https://github.com/riddim](https://github.com/AndreaMarangione))
+**Author** — [@AndreaMarangione](https://github.com/AndreaMarangione)
 
 <div align="center">
 <sub>Screenshots are from the live application with all data anonymised.</sub>
