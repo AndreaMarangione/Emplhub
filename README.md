@@ -90,7 +90,7 @@ that matters.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/architecture.png">
-  <img alt="Emplhub architecture" src="assets/architecture-light.png">
+  <img alt="Emplhub architecture" src="assets/architecture.png">
 </picture>
 
 ---
