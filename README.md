@@ -1,6 +1,6 @@
 <div align="center">
 
-# Emplhub
+# emplhub
 
 **Workforce management for field engineering teams.**
 
