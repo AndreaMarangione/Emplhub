@@ -99,8 +99,6 @@ that matters.
 
 In active production use and under continuous development.
 
-**Author** — [@AndreaMarangione](https://github.com/AndreaMarangione)
-
 <div align="center">
 <sub>Screenshots are from the live application with all data anonymised.</sub>
 </div>
